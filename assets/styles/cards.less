@@ -1,0 +1,62 @@
+.work-containter {
+  color: @web-grey;
+  background-color: @web-black;
+  text-align: center;
+  padding: 2.8em 4.4em;
+
+  #work {
+    .container {
+      .card-deck {
+        margin-top: -5em;
+
+        .card {
+          border: 6px solid @web-grey;
+          border-radius: 2em;
+          background-color: @web-black;
+
+          .card-body {
+            text-align: center;
+
+            .card-title {
+              font-family: 'Permanent Marker', cursive;
+              color: @web-grey;
+              font-weight: bold;
+            }
+
+            .card-text {
+              color: @web-dgrey;
+
+              .primary-btn {
+                color: @primary-color;
+                border: 2px solid @primary-color;
+                background-color: transparent;
+                border-radius: 1em;
+              }
+
+              .primary-btn:hover {
+                background-color: @primary-color;
+                border: 2px solid @primary-color;
+                color: @web-dgrey;
+                cursor: pointer;
+              }
+
+              .level-1 {
+                padding-top: 1em;
+              }
+
+              ul {
+                list-style-type: none;
+                margin-left: -2em;
+
+                li {
+                  color: @web-dgrey;
+                  font-family: 'Corben',cursive;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

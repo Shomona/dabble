@@ -27,6 +27,9 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
+  '/new': {
+    view: 'pages/newhomepage'
+  },
 
   /***************************************************************************
   *                                                                          *

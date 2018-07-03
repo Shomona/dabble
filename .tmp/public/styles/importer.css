@@ -8,3 +8,245 @@
  * For more information see:
  *   https://sailsjs.com/anatomy/assets/styles/importer-less
  */
+body,
+html {
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  /*font: 400 15px/1.8 "Lato", sans-serif;*/
+  color: #777;
+}
+* {
+  font-family: "Corben", cursive;
+}
+.btn-primary {
+  color: #ddd;
+  border: 2px solid #ddd;
+  background-color: transparent;
+  border-radius: 290486px;
+  width: 6em;
+  padding-left: 1.1em !important;
+}
+.btn-primary:hover {
+  background-color: #ddd;
+  border: 2px solid #ddd;
+  color: #777;
+}
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/images/img_parallax.jpg");
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/images/comic.jpg");
+  min-height: 400px;
+}
+.bgimg-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/images/laptop4.jpg");
+  min-height: 400px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.caption span.border {
+  /*background-color: #111;*/
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  border: none!important;
+  padding: 1em;
+  font-size: 1.8em;
+  letter-spacing: 0.24em;
+}
+.caption .border-heading {
+  background-color: transparent;
+}
+.content-white {
+  font-size: 1.1em;
+  color: #777;
+  background-color: white;
+  text-align: center;
+  text-align: justify;
+  padding: 2.7em 4.44em;
+}
+.relative {
+  position: relative;
+}
+nav {
+  background-color: #282E34;
+}
+nav .navbar-brand {
+  color: #ddd;
+  font-family: "Permanent Marker", cursive;
+}
+nav .navbar-brand i {
+  font-size: 1rem;
+  font-family: "Permanent Marker", cursive;
+}
+nav ul.navbar-nav a {
+  color: #ddd;
+  font-family: "Permanent Marker", cursive;
+}
+.social .fa {
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.social .fa-linkedin:hover {
+  color: #007bb5;
+}
+.social .fa-facebook:hover {
+  color: #3B5998;
+}
+.social .fa-instagram:hover {
+  color: #f40083;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    font-size: 13px;
+  }
+}
+.work-containter {
+  color: #ddd;
+  background-color: #282E34;
+  text-align: center;
+  padding: 2.8em 4.4em;
+}
+.work-containter #work .container .card-deck {
+  margin-top: -5em;
+}
+.work-containter #work .container .card-deck .card {
+  border: 6px solid #ddd;
+  border-radius: 2em;
+  background-color: #282E34;
+}
+.work-containter #work .container .card-deck .card .card-body {
+  text-align: center;
+}
+.work-containter #work .container .card-deck .card .card-body .card-title {
+  font-family: 'Permanent Marker', cursive;
+  color: #ddd;
+  font-weight: bold;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text {
+  color: #777;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text .primary-btn {
+  color: #ddd;
+  border: 2px solid #ddd;
+  background-color: transparent;
+  border-radius: 1em;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text .primary-btn:hover {
+  background-color: #ddd;
+  border: 2px solid #ddd;
+  color: #777;
+  cursor: pointer;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text .level-1 {
+  padding-top: 1em;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text ul {
+  list-style-type: none;
+  margin-left: -2em;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text ul li {
+  color: #777;
+  font-family: 'Corben', cursive;
+}
+/*Din Font Styles*/
+@font-face {
+  font-family: "Din";
+  src: url("/fonts/dinpro/dinpro-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/dinpro/dinpro-regular-webfont.woff") format("woff"), /* Pretty Modern Browsers */ url("/fonts/dinpro/dinpro-regular-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Din";
+  src: url("/fonts/dinpro/dinpro-medium-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/dinpro/dinpro-medium-webfont.woff") format("woff"), /* Pretty Modern Browsers */ url("/fonts/dinpro/dinpro-medium-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Din";
+  src: url("/fonts/dinpro/dinpro-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/dinpro/dinpro-bold-webfont.woff") format("woff"), /* Pretty Modern Browsers */ url("/fonts/dinpro/dinpro-bold-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Din";
+  src: url("/fonts/dinpro/dinpro-black-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/dinpro/dinpro-black-webfont.woff") format("woff"), /* Pretty Modern Browsers */ url("/fonts/dinpro/dinpro-black-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Din";
+  src: url("/fonts/dinpro/dinpro-light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/dinpro/dinpro-light-webfont.woff") format("woff"), /* Pretty Modern Browsers */ url("/fonts/dinpro/dinpro-light-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: 200;
+  font-style: normal;
+}
+/* permanent-marker-regular - latin */
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/permanent-marker-v7-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url('../fonts/permanent-marker-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/permanent-marker-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/permanent-marker-v7-latin-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/permanent-marker-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/permanent-marker-v7-latin-regular.svg#PermanentMarker') format('svg');
+  /* Legacy iOS */
+}
+/* corben-regular - latin */
+@font-face {
+  font-family: 'Corben';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/corben-v11-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Corben Regular'), local('Corben-Regular'), url('../fonts/corben-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/corben-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/corben-v11-latin-regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/corben-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/corben-v11-latin-regular.svg#Corben') format('svg');
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/fonts/font-awesome/fontawesome-webfont.eot");
+  src: url("/fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("/fonts/font-awesome/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

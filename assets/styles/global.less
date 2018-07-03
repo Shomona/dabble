@@ -1,0 +1,88 @@
+body,
+html {
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  /*font: 400 15px/1.8 "Lato", sans-serif;*/
+  color: @web-dgrey;
+}
+
+* {
+  font-family: @base-font;
+}
+
+.btn-primary {
+  color: @primary-color;
+  border: 2px solid @primary-color;
+  background-color: transparent;
+  border-radius: 290486px;
+  width: 6em;
+  padding-left: 1.1em !important;
+}
+
+.btn-primary:hover {
+  background-color: @primary-color;
+  border: 2px solid @primary-color;
+  color: @web-dgrey;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: @img-opacity, url("/images/img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: @img-opacity, url("/images/comic.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: @img-opacity ,url("/images/laptop4.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+  span.border {
+    /*background-color: #111;*/
+    color: white;
+    font-family: @marker-font;
+    font-weight: bold;
+    border: none!important;
+    padding: 1em;
+    font-size: 1.8em;
+    letter-spacing: 0.24em;
+  }
+
+  .border-heading {
+    background-color: transparent;
+  }
+}
+
+.content-white {
+  font-size: 1.1em;
+  color: @web-dgrey;
+  background-color: white;
+  text-align: center;
+  text-align: justify;
+  padding: 2.7em 4.44em;
+}
+
+.relative {
+  position: relative;
+}
