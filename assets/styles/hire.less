@@ -1,0 +1,154 @@
+body {
+  font-size: 18px;
+  background: -webkit-linear-gradient(to right, @hire-bg, @hire-secondary-bg);
+  background: -moz-linear-gradient(to right, @hire-bg, @hire-secondary-bg);
+  background: linear-gradient(to right, @hire-bg, @hire-secondary-bg);
+
+  .section-1 {
+    font-weight: bold;
+    color: @web-grey;
+    padding: 1em;
+    font-size: 1.8em;
+    letter-spacing: 0.24em;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 100%;
+
+    .primary-text {
+      font-family: @marker-font;
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      /*position: fixed;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;*/
+      .btn-panel {
+        padding: 1em;
+        text-align: center;
+
+        button {
+          border-width: 0.2em;
+          margin-right: 0.2em;
+        }
+      }
+    }
+
+    a {
+      padding-top: 80px;
+    }
+
+    a span {
+      position: absolute;
+      //top: 0;
+      bottom: 20px;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      margin-left: -12px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb 2s infinite;
+      animation: sdb 2s infinite;
+      opacity: 0;
+      box-sizing: border-box;
+    }
+
+    a span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+
+    a span:nth-of-type(2) {
+      //top: 16px;
+      bottom: 40px;
+      -webkit-animation-delay: 0.15s;
+      animation-delay: 0.15s;
+    }
+
+    a span:nth-of-type(3) {
+      //top: 32px;
+      bottom: 60px;
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+    @-webkit-keyframes sdb {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes sdb {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .section-2 {
+    /* The device with borders */
+    .smartphone {
+      position: relative;
+      width: 360px;
+      height: 640px;
+      margin: auto;
+      border: 16px black solid;
+      border-top-width: 60px;
+      border-bottom-width: 60px;
+      border-radius: 36px;
+    }
+    /* The horizontal line on the top of the device */
+    .smartphone:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 5px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 10px;
+    }
+    /* The circle on the bottom of the device */
+    .smartphone:after {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: 50%;
+      bottom: -65px;
+      transform: translate(-50%, -50%);
+      background: #333;
+      border-radius: 50%;
+    }
+    /* The screen (or content) of the device */
+    .smartphone .content {
+      /*width: 360px;
+      height: 640px;
+      background: white;*/
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
