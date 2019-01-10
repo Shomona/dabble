@@ -1,4 +1,4 @@
-var app = new Framework7({
+/*var app = new Framework7({
   // App root element
   root: '#app',
   // App Name
@@ -18,9 +18,9 @@ var app = new Framework7({
   ],
   // ... other parameters
 });
-
-var owl = $('.owl-carousel.project');
-owl.owlCarousel({
+*/
+var owl1 = $('.owl-carousel.project');
+owl1.owlCarousel({
   items:4,
   loop:true,
   margin:10,
@@ -29,10 +29,10 @@ owl.owlCarousel({
   autoplayHoverPause:true
 });
 $('.play').on('click',function(){
-  owl.trigger('play.owl.autoplay',[3000])
+  owl1.trigger('play.owl.autoplay',[3000])
 })
 $('.stop').on('click',function(){
-  owl.trigger('stop.owl.autoplay')
+  owl1.trigger('stop.owl.autoplay')
 })
 
 var owl = $('.owl-carousel.dabble');

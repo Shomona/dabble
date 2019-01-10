@@ -87,8 +87,8 @@ html {
 }
 .content-white {
   font-size: 1.1em;
-  color: #777;
-  background-color: white;
+  color: #ddd;
+  background-color: #282E34;
   text-align: center;
   text-align: justify;
   padding: 2.7em 4.44em;
@@ -183,6 +183,14 @@ nav ul.navbar-nav a {
 }
 .work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel {
   padding-bottom: 3em;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel a {
+  color: #777;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel a:hover {
+  cursor: pointer;
+  color: #ddd;
+  text-decoration: none;
 }
 .work-containter #work .container .card-deck .card .card-body .card-text .level-1 {
   padding-top: 1em;
