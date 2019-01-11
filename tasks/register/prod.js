@@ -11,7 +11,7 @@
  *   https://sailsjs.com/anatomy/tasks/register/prod.js
  *
  */
-module.exports = function(grunt) {
+/*module.exports = function(grunt) {
   grunt.registerTask('prod', [
     'polyfill:prod', //« Remove this to skip transpilation in production (not recommended)
     'compileAssets',
@@ -23,5 +23,12 @@ module.exports = function(grunt) {
     'sails-linker:prodStyles',
     'sails-linker:clientSideTemplates',
   ]);
-};
+};*/
 
+module.exports = function(grunt) {
+  grunt.registerTask('prod', [
+    'compileAssets',
+    'linkAssets',
+
+  ]);
+};
