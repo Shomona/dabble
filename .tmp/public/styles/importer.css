@@ -184,10 +184,13 @@ nav ul.navbar-nav a {
 .work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel {
   padding-bottom: 3em;
 }
-.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel a {
+.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel .item {
+  min-width: 10em;
+}
+.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel .item a {
   color: #777;
 }
-.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel a:hover {
+.work-containter #work .container .card-deck .card .card-body .card-text .owl-carousel .item a:hover {
   cursor: pointer;
   color: #ddd;
   text-decoration: none;

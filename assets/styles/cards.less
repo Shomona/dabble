@@ -40,20 +40,25 @@
                 cursor: pointer;
               }
 
-              p{
+              p {
                 padding-top: 1em;
               }
 
-              .owl-carousel{
+              .owl-carousel {
                 padding-bottom: 3em;
-                a{
-                  color: @web-dgrey;
-                }
-                a:hover{
-                  cursor: pointer;
-                  color: @web-grey;
-                  text-decoration: none;
 
+                .item {
+                  min-width: 10em;
+
+                  a {
+                    color: @web-dgrey;
+                  }
+
+                  a:hover {
+                    cursor: pointer;
+                    color: @web-grey;
+                    text-decoration: none;
+                  }
                 }
               }
 
